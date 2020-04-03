@@ -1,2 +1,2 @@
 # cookiecutter-minimal-ml
-Cookiecutter template for simple data science projects
+Cookiecutter template for simple data science projects using `conda`
