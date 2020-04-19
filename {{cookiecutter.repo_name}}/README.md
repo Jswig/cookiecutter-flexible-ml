@@ -2,12 +2,12 @@
 
 *{{ cookiecutter.author_name }}, {{% now 'local', '%d/%m/%Y' %}*
 
-
 {{ cookiecutter.description }}
 
 ## Installation
 
 **Requirements**: 
+
 ```bash
 python run.py setup
 ```
