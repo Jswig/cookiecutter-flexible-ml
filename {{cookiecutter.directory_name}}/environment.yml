@@ -1,0 +1,9 @@
+name:
+	{{cookiecutter.repo_name}}
+channels:
+	- base
+	- anaconda
+	- conda-forge
+dependencies:
+	
+

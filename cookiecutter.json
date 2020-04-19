@@ -1,7 +1,7 @@
 {
-    "project_name" : "project_name",
+    "project_name" : "example project",
     "repo_name" :  "{{ cookiecutter.project_name.lower().replace(' ', '-') }}",
     "author_name" : "",
-    "description" : "a short descriptions of the project",
+    "description" : "Minimal ML example",
     "license": ["MIT", "BSD-3-Clause", "No license file"]
 }
