@@ -3,6 +3,7 @@
 *Anders Poirel, April 2020*
 
 A cookiecutter template for simple data science  and machine learnning projects using `conda` for environment management.
+For more information on what `cookiecutter` does, check out [cookiecutter.readthedocs.io](https://cookiecutter.readthedocs.io/en/1.7.0/index.html).
 
 ## Usage
 
