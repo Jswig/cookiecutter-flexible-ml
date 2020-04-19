@@ -26,8 +26,8 @@ to include code for reproducing the full analysis using code defined in `src`: a
 ## Motivation
 
 I wanted a simple template that promotes good practices for reproducible data science (immutablity of raw data, seperation of exploratory code and canonical analysis) while being easy for beginners in data science to use. 
- - A python script was preferred to a `Makefile` to avoid issues for Windows users. `snakemake` would be preferred for "real" projects
- - The template does not include boilerplate for generating documentation or python packages which aren't useful for the assumed use case of simple personal or classroom projects.
+ - A python script was preferred to a `Makefile` to avoid issues for Windows users. `snakemake` would be preferred for "real" projects.
+ - The template does not include boilerplate for generating documentation or python packages, which would not be useful in the assumed use case of simple personal/classroom projects.
 
 
 I took heavy insipration from the template and philosophy described by Driven Data at [cookicutter-data-science](https://drivendata.github.io/cookiecutter-data-science/#keep-secrets-and-configuration-out-of-version-control).
