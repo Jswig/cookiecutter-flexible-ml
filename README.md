@@ -46,11 +46,11 @@ I took heavy insipration from the template and philosophy described by Driven Da
 │   └── raw            <- The original, immutable data dump.
 ├── notebooks          <- Jupyter notebooks
 ├── output             <- For outputs of running the analysis
-│   ├── visualizations <- Visualization                
-│   └── models         <- Saved models and predictions
+│   ├── visualizations <- Visualizations generated during the analysis                
+│   └── models         <- Saved models and predictions.
 │
-└── src                <- Source code for this project
-    └── __init__.py    <- Makes this a python module
+└── src                <- Source code for this project.
+    └── __init__.py    <- Makes this a Python module.
 ```    
 
 ## License
