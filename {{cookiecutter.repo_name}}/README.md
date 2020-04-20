@@ -1,6 +1,6 @@
 # {{cookiecutter.project_name}}
 
-*{{ cookiecutter.author_name }}, {{% now 'local', '%d/%m/%Y' %}*
+*{{ cookiecutter.author_name }}, {{% now 'local', '%d/%m/%Y' %}}*
 
 {{ cookiecutter.description }}
 
