@@ -41,13 +41,13 @@ I took heavy insipration from the template and philosophy described by Driven Da
 ├── LICENSE
 ├── README.md
 ├── run.py             <- Script for installing environements and reproducing 
-│                         the full analysis
+│                         the full analysis.
 ├── data
 │   ├── processed      <- The final, canonical data sets for modeling.
 │   └── raw            <- The original, immutable data dump.
-├── notebooks          <- Jupyter notebooks
-├── output             <- For outputs of running the analysis
-│   ├── visualizations <- Visualizations generated during the analysis                
+├── notebooks          <- Jupyter notebooks.
+├── output             <- For outputs of running the analysis.
+│   ├── visualizations <- Visualizations generated during the analysis .               
 │   └── models         <- Saved models and predictions.
 │
 └── src                <- Source code for this project.
