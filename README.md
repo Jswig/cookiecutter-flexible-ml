@@ -13,7 +13,7 @@ For more information on what `cookiecutter` does, check out [cookiecutter.readth
 
 Run
 ```bash
-cookiecutter gh:Jswig/cookicutter-minimal-ml
+cookiecutter gh:Jswig/cookiecutter-minimal-ml
 ```
 
 The user is expected to modify the following skeleton in `run.py` 
