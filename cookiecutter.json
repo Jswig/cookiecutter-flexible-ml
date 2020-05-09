@@ -5,5 +5,5 @@
     "description" : "",
     "license": ["MIT", "BSD-3-Clause", "No license file"],
     "main package manager": ["conda", "pip"],
-    "worflow automation": ["Python", "Make", "Snakemake"]
+    "workflow automation": ["Python", "Make", "Snakemake"]
 }
