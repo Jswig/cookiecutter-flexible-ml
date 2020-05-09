@@ -1,7 +1,9 @@
 {
-    "project_name" : "example project",
+    "project_name" : "",
     "repo_name" :  "{{ cookiecutter.project_name.lower().replace(' ', '-') }}",
     "author_name" : "",
-    "description" : "Minimal ML example",
-    "license": ["MIT", "BSD-3-Clause", "No license file"]
+    "description" : "",
+    "license": ["MIT", "BSD-3-Clause", "No license file"],
+    "main package manager": ["conda", "pip"],
+    "worflow automation": ["Python", "Make", "Snakemake"]
 }
