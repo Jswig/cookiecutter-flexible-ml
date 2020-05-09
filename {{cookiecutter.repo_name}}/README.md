@@ -1,16 +1,11 @@
-# {{cookiecutter.project_name}}
+# {{ cookiecutter.project_name }}
 
-*{{ cookiecutter.author_name }}, {{now 'local', '%d/%m/%Y'}}*
+*{{ cookiecutter.author_name }}*
 
 {{ cookiecutter.description }}
 
 ## Installation
 
-**Requirements**: 
-
-```bash
-python run.py setup
-```
 
 ## Running the project
 
