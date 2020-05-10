@@ -31,3 +31,9 @@ if project_report == "No":
 
 if notebooks == "No":
     shutil.rmtree("notebooks")
+
+if src_structure == "Less":
+    shutil.rmtree('src/data')
+    shutil.rmtree('src/features')
+    shutil.rmtree('src/models')
+    shutil.rmtree('src/visualization')
