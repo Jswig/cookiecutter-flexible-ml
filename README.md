@@ -19,7 +19,7 @@ If in doubt, I recommend using the default option (Press \[Enter\] at the prompt
 
 ## Motivation
 
-I wanted a simple template that promotes good practices for reproducible data science (immutablity of raw data, seperation of exploratory code and canonical analysis), while allowing 
+I wanted a simple template that promotes good practices for reproducible data science (immutablity of raw data, seperation of exploratory code and "final" analysis code), while allowing 
  - A python script is used by default for workflow automation instead of
   a `Makefile` (though I leave it as an option) to avoid issues for 
   Windows users. `snakemake` is preferred for "real" projects.
