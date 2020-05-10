@@ -15,7 +15,6 @@ Switch to the new environment:
 ```
 conda activate {{cookiecutter.repo_name}}
 ```
-
 {% elif cookiecutter.package_manager == "pip" %}
 Create an isolated environment using your preferred solution 
 (`venv`, `pipenv`,...) and install the required package: 
@@ -23,7 +22,6 @@ Create an isolated environment using your preferred solution
 pip install -r requirements.txt
 ```
 {% endif %}
-
 
 ## Project structure
 
@@ -43,7 +41,7 @@ pip install -r requirements.txt
     ├── __init__.py    <- Makes this a python module
 ```    
 
-{% if cookiecutter.license != "No license" %}
+{% if cookiecutter.license != "No license file" %}
 ## License
 
 Distributed under the  {{ cookiecutter.license }} license.
