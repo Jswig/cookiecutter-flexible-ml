@@ -34,3 +34,6 @@ if notebooks == "No":
 
 if src_structure == "Less":
     shutil.rmtree('src/data')
+    shutil.rmtree('src/features')
+    shutil.rmtree('src/models')
+    shutil.rmtree('src/visualization')

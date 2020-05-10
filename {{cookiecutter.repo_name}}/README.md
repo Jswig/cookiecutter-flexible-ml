@@ -25,13 +25,13 @@ pip install -r requirements.txt
 
 ## Project structure
 ```
-.
-{% if cookiecutter.package_manager == "conda" -%}
+
+{%- if cookiecutter.package_manager == "conda" -%}
 ├── environment.yml          <- The conda file for reproducing the analysis    
 |                         environment.
 {%- elif cookiecutter.package_manager == "pip" %}
 ├── requirements.txt         <- The requirements file for reproducing the analysis 
-|                         environment.
+|                               environment.
 {%- endif %} 
 {% if cookiecutter.license != "No license file" -%}
 ├── LICENSE
@@ -55,13 +55,18 @@ pip install -r requirements.txt
 {%- if cookiecutter.project_report == "Yes" %}
 ├── reports                  <- Generated analysis as HTML, PDF, LaTeX, etc.
 {%- endif %}
-└── src                         <- Source code for this project
+└── src                      <- Source code for this project.
 {%- if cookiecutter.src_structure == "Less" %}
-    └── __init__.py          <- Makes this a python module
+    └── __init__.py          <- Makes this a python module.
 {%- elif cookiecutter.src_structure == "More" %}
-    ├── __init__.py          <- Makes this a python module
-    ├── data                 <- Scripts to download or generate data
+    ├── __init__.py          <- Makes this a python module.
+    ├── data                 <- Scripts to download or generate data.
     |   └── make_dataset.py  
+    ├── features             <- Scripts to turn raw data into features for modeling.
+    |   └── build_features.py  
+    ├── models               <- Scripts used to generate models and inference results.
+    └── visualization        <- Scripts to generate graphics
+        └── visualize.py
 {%- endif %}
 ```
     
