@@ -4,16 +4,15 @@ import shutil
 os_license = '{{ cookiecutter.license }}'
 package_manager = '{{ cookiecutter.package_manager }}'
 workflow_automation = '{{ cookiecutter.workflow_automation }}'
-
-print('Hello bi')
+project_report = '{{ cookiecutter.project_report }}'
 
 if os_license == "No license file":
     os.remove("LICENSE")
 
 if package_manager == "conda":
-    os.remove("environment.yml")
-elif package_manager == "pip":
     os.remove("requirements.txt")
+elif package_manager == "pip":
+    os.remove("environment.yml")
 
 if workflow_automation == "Python":
     os.remove("Makefile")
