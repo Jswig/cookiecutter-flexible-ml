@@ -7,5 +7,6 @@
     "package_manager": ["conda", "pip"],
     "workflow_automation": ["Python", "Make", "Snakemake"],
     "notebooks": ["No", "Yes"],
-    "project_report": ["No", "Yes"]
+    "project_report": ["No", "Yes"],
+    "src_structure": ["Less", "More"]
 }

@@ -43,7 +43,7 @@ pip install -r requirements.txt
 ├── Snakefile          <- script with options for running the final analysis
 {% elif cookiecutter.workflow_automation == "Make" -%}
 ├── Makefile           <- script that runs the full analysis
-{%- endif %}
+{%- endif -%}
 ├── data
 |   ├── interim        <- Intermediate data that has been transformed.
 │   ├── processed      <- The final, canonical data sets for modeling.
@@ -52,7 +52,7 @@ pip install -r requirements.txt
 ├── output             
 |   ├── models         <- Serialized models, predictions, model summaries.
 |   └── visualizations <- Graphics created during analysis.
-{% if cookiecutter.project_report == "Yes" -%}
+{%- if cookiecutter.project_report == "Yes" -%}
 ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
 {%- endif %}
 └── src                <- Source code for this project

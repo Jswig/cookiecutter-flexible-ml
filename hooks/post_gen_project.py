@@ -5,7 +5,8 @@ os_license = '{{ cookiecutter.license }}'
 package_manager = '{{ cookiecutter.package_manager }}'
 workflow_automation = '{{ cookiecutter.workflow_automation }}'
 project_report = '{{ cookiecutter.project_report }}'
-notebooks = '{{ cookiecutter.notebooks}}'
+notebooks = '{{ cookiecutter.notebooks }}'
+src_structure = '{{ cookiecutter.src_structure }}'
 
 if os_license == "No license file":
     os.remove("LICENSE")
@@ -30,3 +31,9 @@ if project_report == "No":
 
 if notebooks == "No":
     shutil.rmtree("notebooks")
+
+if src_structure == "Less":
+    shutil.rmtree("src/data")
+    shutil.rmtree("src/features")
+    shutil.rmtree("src/models")
+    shutil.rmtree("src/visualization")
