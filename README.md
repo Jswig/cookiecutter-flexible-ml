@@ -1,9 +1,13 @@
 # cookiecutter-flexible-ml
 
-*Anders Poirel, May 2020*
+![Python version](https://img.shields.io/badge/Python-3.x-informational)
+![Issues closed](https://img.shields.io/github/issues-closed/Jswig/cookiecutter-flexible-ml)
+[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
 
-A cookiecutter template for data analysis and machine learning projects.
+*Anders Poirel*
 
+A flexible cookiecutter template for data analysis and machine learning 
+projects.
 `cookiecutter` is a command-line utility that creates projects from 
 cookiecutters (project templates). Documentation:
 [cookiecutter.readthedocs.io](https://cookiecutter.readthedocs.io/en/1.7.0/index.html).
