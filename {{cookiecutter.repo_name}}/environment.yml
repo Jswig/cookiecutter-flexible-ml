@@ -4,6 +4,12 @@ channels:
 	- base
 	- anaconda
 	- conda-forge
+{% if cookiecutter.workflow_automation == "Snakemake" %}
+	- bioconda
+{% endif %}
 dependencies:
+{% if cookiecutter.workflow_automation == "Snakemake" %}
+	- snakemake
+{% endif %}
 	
 
