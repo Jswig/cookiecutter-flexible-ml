@@ -23,3 +23,6 @@ elif workflow_automation == "Make":
 elif workflow_automation == "Snakemake":
     os.remove("Makefile")
     os.remove("run.py")
+
+if project_report == "No":
+    shutil.rmtree("reports")
