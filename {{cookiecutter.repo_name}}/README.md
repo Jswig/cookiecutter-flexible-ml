@@ -27,8 +27,8 @@ pip install -r requirements.txt
 ```
 
 {%- if cookiecutter.package_manager == "conda" -%}
-├── environment.yml          <- The conda file for reproducing the analysis    
-|                         environment.
+├── environment.yml          <- The conda file for reproducing the analysis
+|                               environment.
 {%- elif cookiecutter.package_manager == "pip" %}
 ├── requirements.txt         <- The requirements file for reproducing the analysis 
 |                               environment.
@@ -38,17 +38,17 @@ pip install -r requirements.txt
 {%- endif %}
 ├── README.md                <- The top-level README
 {%- if cookiecutter.workflow_automation == "Python" %}
-├── run.py                   <- script that runs the full analysis
+├── run.py                   <- Script with option for running the final analysis.
 {%- elif cookiecutter.workflow_automation == "Snakemake" %}
-├── Snakefile                <- script with options for running the final analysis
+├── Snakefile                <- Script with options for running the final analysis.
 {%- elif cookiecutter.workflow_automation == "Make" %}
-├── Makefile                 <- script that runs the full analysis
+├── Makefile                 <- Script with options for running the final analysis.
 {%- endif %}
 ├── data
 |   ├── interim              <- Intermediate data that has been transformed.
 │   ├── processed            <- The final, canonical data sets for modeling.
 │   └── raw                  <- The original, immutable data dump.
-├── notebooks                <- Jupyter notebooks
+├── notebooks                <- Jupyter notebooks.
 ├── output             
 |   ├── models               <- Serialized models, predictions, model summaries.
 |   └── visualization        <- Graphics created during analysis.
@@ -65,7 +65,7 @@ pip install -r requirements.txt
     ├── features             <- Scripts to turn raw data into features for modeling.
     |   └── build_features.py  
     ├── models               <- Scripts used to generate models and inference results.
-    └── visualization        <- Scripts to generate graphics
+    └── visualization        <- Scripts to generate graphics.
         └── visualize.py
 {%- endif %}
 ```
