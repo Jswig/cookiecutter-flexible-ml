@@ -6,7 +6,7 @@
 
 ## Setup
 
-{-% if cookiecutter.package_manager == "conda" -%}
+{% if cookiecutter.package_manager == "conda" -%}
 Create a conda environment with all the required packages: 
 ```
 conda env create -f environment.yml
@@ -15,18 +15,18 @@ Switch to the new environment:
 ```
 conda activate {{cookiecutter.repo_name}}
 ```
-{%- elif cookiecutter.package_manager == "pip" -%}
+{% elif cookiecutter.package_manager == "pip" -%}
 Create an isolated environment using your preferred solution 
 (`venv`, `pipenv`,...) and install the required package: 
 ```
 pip install -r requirements.txt
 ```
-{%- endif -%}
+{% endif -%}
 
 ## Project structure
     
-{%- if cookiecutter.license != "No license file" -%}
+{% if cookiecutter.license != "No license file" -%}
 ## License
 
 This project is distributed under the  {{ cookiecutter.license }} license.
-{%- endif -%}
+{%- endif %}
