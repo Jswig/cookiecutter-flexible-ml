@@ -4,16 +4,13 @@ channels:
 	- base
 	- conda-forge
 	- anaconda
-{% if cookiecutter.workflow_automation == "Snakemake" %}
+{%- if cookiecutter.workflow_automation == "Snakemake" -%}
 	- bioconda
 {% endif %}
 dependencies:
-{% if cookiecutter.notebooks == "Yes" %}
+{%- if cookiecutter.notebooks == "Yes" -%}
 	- jupyter
 {% endif %}
-{% if cookiecutter.workflow_automation == "Snakemake" %}
+{%- if cookiecutter.workflow_automation == "Snakemake" -%}
 	- snakemake
 {% endif %}
-
-	
-
