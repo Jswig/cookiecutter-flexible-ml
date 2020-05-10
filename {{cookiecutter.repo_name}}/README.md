@@ -6,17 +6,24 @@
 
 ## Setup
 
-
-## Running the project
-
-```bash
-python run.py project
+{% if cookiecutter.package_manager == "conda" %}
+Create a conda environment with all the required packages: 
+```
+conda env create -f environment.yml
+```
+Switch to the new environment:
+```
+conda activate {{cookiecutter.repo_name}}
 ```
 
-If you want to setup and run everything at once, use
+{% elif cookiecutter.package_manager == "pip" %}
+Create an isolated environment using your preferred solution 
+(`venv`, `pipenv`,...) and install the required package: 
 ```
-python run.py 
+pip install -r requirements.txt
 ```
+{% endif %}
+
 
 ## Project structure
 
@@ -25,18 +32,19 @@ python run.py
 ├── environment.yml    <- File specifying a conda environment
 ├── LICENSE
 ├── README.md
-├── run.py             <- Script for installing environements and reproducing 
+├── run.py             <- Script for installing environments and reproducing 
 │                         the full analysis
 ├── data
 │   ├── processed      <- The final, canonical data sets for modeling.
 │   └── raw            <- The original, immutable data dump.
 ├── notebooks          <- Jupyter notebooks
-├── output             <- For a manuscript source, e.g., LaTeX, Mark
+├── output             
 └── src                <- Source code for this project
     ├── __init__.py    <- Makes this a python module
 ```    
 
-
+{% if cookiecutter.license != "No license" %}
 ## License
 
-Distributed under the t
+Distributed under the  {{ cookiecutter.license }} license.
+{% endif %}
