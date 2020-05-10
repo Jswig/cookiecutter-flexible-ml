@@ -36,7 +36,7 @@ pip install -r requirements.txt
 {% endif %}
 {% if cookiecutter.license != "No license file" %}
 ├── LICENSE
-{% endif %}
+{ %endif %}
 ├── README.md          <- The top-level README
 {% if cookiecutter.workflow_automation == "Python" %}
 ├── run.py             <- script that runs the full analysis
@@ -59,3 +59,9 @@ pip install -r requirements.txt
 └── src                <- Source code for this project
     ├── __init__.py    <- Makes this a python module
 ```    
+
+{% if cookiecutter.license != "No license file" %}
+## License
+
+This project is distributed under the  {{ cookiecutter.license }} license.
+{% endif %}
