@@ -6,5 +6,6 @@
     "license": ["MIT", "BSD-3-Clause", "No license file"],
     "package_manager": ["conda", "pip"],
     "workflow_automation": ["Python", "Make", "Snakemake"],
+    "notebooks": ["No", "Yes"],
     "project_report": ["No", "Yes"]
 }
