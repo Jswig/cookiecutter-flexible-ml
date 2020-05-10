@@ -5,6 +5,8 @@ os_license = '{{ cookiecutter.license }}'
 package_manager = '{{ cookiecutter.package_manager }}'
 workflow_automation = '{{ cookiecutter.workflow_automation }}'
 
+print('Hello bi')
+
 if os_license == "No license file":
     os.remove("LICENSE")
 
