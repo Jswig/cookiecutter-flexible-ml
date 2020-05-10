@@ -5,6 +5,7 @@ os_license = '{{ cookiecutter.license }}'
 package_manager = '{{ cookiecutter.package_manager }}'
 workflow_automation = '{{ cookiecutter.workflow_automation }}'
 project_report = '{{ cookiecutter.project_report }}'
+notebooks = '{{ cookiecutter.notebooks}}'
 
 if os_license == "No license file":
     os.remove("LICENSE")
@@ -26,3 +27,6 @@ elif workflow_automation == "Snakemake":
 
 if project_report == "No":
     shutil.rmtree("reports")
+
+if notebooks == "No":
+    shutil.rmtree("notebooks")

@@ -38,13 +38,6 @@ pip install -r requirements.txt
 ├── LICENSE
 { %endif %}
 ├── README.md          <- The top-level README
-{% if cookiecutter.workflow_automation == "Python" %}
-├── run.py             <- script that runs the full analysis
-{% elif cookiecutter.workflow_automation == "Snakemake" %}
-├── Snakefile          <- script with options for running the final analysis
-{% elif cookiecutter.workflow_automation == "Make" %}
-├── Makefile           <- script that runs the full analysis
-{% endif %}
 ├── data
 |   ├── interim        <- Intermediate data that has been transformed.
 │   ├── processed      <- The final, canonical data sets for modeling.
@@ -62,6 +55,5 @@ pip install -r requirements.txt
 
 {% if cookiecutter.license != "No license file" %}
 ## License
-
 This project is distributed under the  {{ cookiecutter.license }} license.
 {% endif %}
