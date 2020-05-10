@@ -4,7 +4,7 @@
 
 {{ cookiecutter.description }}
 
-## Installation
+## Setup
 
 
 ## Running the project
@@ -35,3 +35,8 @@ python run.py
 └── src                <- Source code for this project
     ├── __init__.py    <- Makes this a python module
 ```    
+
+
+## License
+
+Distributed under the t

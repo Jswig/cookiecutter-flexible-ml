@@ -4,6 +4,6 @@
     "author_name" : "",
     "description" : "",
     "license": ["MIT", "BSD-3-Clause", "No license file"],
-    "main package manager": ["conda", "pip"],
-    "workflow automation": ["Python", "Make", "Snakemake"]
+    "package_manager": ["conda", "pip"],
+    "workflow_automation": ["Python", "Make", "Snakemake"]
 }
