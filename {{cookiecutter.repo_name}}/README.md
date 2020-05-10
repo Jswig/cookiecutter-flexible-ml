@@ -21,7 +21,7 @@ Create an isolated environment using your preferred solution
 ```
 pip install -r requirements.txt
 ```
-{% endif -%}
+{% endif %}
 
 ## Project structure
 ```
@@ -29,7 +29,7 @@ pip install -r requirements.txt
 {% if cookiecutter.package_manager == "conda" -%}
 ├── environment.yml    <- The conda file for reproducing the analysis    
 |                         environment.
-{% elif cookiecutter.package_manager == "pip" -%}
+{%- elif cookiecutter.package_manager == "pip" %}
 ├── requirements.txt   <- The requirements file for reproducing the analysis 
 |                         environment.
 {%- endif %} 
@@ -37,11 +37,11 @@ pip install -r requirements.txt
 ├── LICENSE
 {%- endif %}
 ├── README.md          <- The top-level README
-{% if cookiecutter.workflow_automation == "Python" -%}
+{%- if cookiecutter.workflow_automation == "Python" %}
 ├── run.py             <- script that runs the full analysis
-{% elif cookiecutter.workflow_automation == "Snakemake" -%}
+{%- elif cookiecutter.workflow_automation == "Snakemake" %}
 ├── Snakefile          <- script with options for running the final analysis
-{% elif cookiecutter.workflow_automation == "Make" -%}
+{%- elif cookiecutter.workflow_automation == "Make" %}
 ├── Makefile           <- script that runs the full analysis
 {%- endif %}
 ├── data
@@ -52,7 +52,7 @@ pip install -r requirements.txt
 ├── output             
 |   ├── models         <- Serialized models, predictions, model summaries.
 |   └── visualizations <- Graphics created during analysis.
-{% if cookiecutter.project_report == "Yes" -%}
+{%- if cookiecutter.project_report == "Yes" %}
 ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
 {%- endif %}
 └── src                <- Source code for this project

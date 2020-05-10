@@ -8,7 +8,7 @@ channels:
 	- bioconda
 {%- endif %}
 dependencies:
-{% if cookiecutter.notebooks == "Yes" -%}
+{%- if cookiecutter.notebooks == "Yes" %}
 	- jupyter
 {% endif -%}
 {%- if cookiecutter.workflow_automation == "Snakemake" %}
