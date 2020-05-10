@@ -1,9 +1,12 @@
-# cookiecutter-flexible-science
+# cookiecutter-flexible-ml
 
 *Anders Poirel, May 2020*
 
-A cookiecutter template for simple data science  and machine learnning projects using `conda` for environment management.
-For more information on what `cookiecutter` does, check out [cookiecutter.readthedocs.io](https://cookiecutter.readthedocs.io/en/1.7.0/index.html).
+A cookiecutter template for data analysis and machine learning projects.
+
+`cookiecutter` is a command-line utility that creates projects from 
+cookiecutters (project templates). Documentation:
+[cookiecutter.readthedocs.io](https://cookiecutter.readthedocs.io/en/1.7.0/index.html).
 
 ## Usage
 
@@ -12,36 +15,40 @@ For more information on what `cookiecutter` does, check out [cookiecutter.readth
 
 Run
 ```bash
-cookiecutter gh:Jswig/cookiecutter-minimal-ml
+cookiecutter gh:Jswig/cookiecutter-flexible-ml
 ```
 
-If in doubt, I recommend using the default option (Press \[Enter\] at the prompt).
+If in doubt, select the default option (`[Enter]` in the prompt).
 
 ## Motivation
 
-I wanted a simple template that promotes good practices for reproducible data science (immutablity of raw data, seperation of exploratory code and "final" analysis code), while allowing 
+I wanted a simple template that promotes good practices for reproducible 
+data science (immutablity of raw data, seperation of exploratory code and 
+"final" analysis code), while giving options for more or less complex projects
+
  - A python script is used by default for workflow automation instead of
-  a `Makefile` (though I leave it as an option) to avoid issues for 
-  Windows users. `snakemake` is preferred for "real" projects.
- - The template does not include boilerplate for generating 
- documentation or python packages, which is not necessary for my intended
- use case of personal/classroom projects
+  a `Makefile` (though I leave it as an option) to avoid issues for Windows 
+  users. `snakemake` is preferred for "real" projects.
+ - The template does not include boilerplate for generating documentation or 
+ python packages, which is not necessary for the intended use case of personal
+ /classroom projects.
  
 
 
-I took heavy insipration from the template and philosophy described by Driven Data at [cookicutter-data-science](https://drivendata.github.io/cookiecutter-data-science/#keep-secrets-and-configuration-out-of-version-control).
+Much inspiration was drawn from the template and philosophy of Driven Data's 
+[cookicutter-data-science](https://drivendata.github.io/cookiecutter-data-science#keep-secrets-and-configuration-out-of-version-control).
 
 ## Project structure
 
-Som of these are optional
+Some of these might not be created depending on options picked
 ```
 .
 ├── LICENSE
-├── environment.yml /  <- File specifying a conda environment
+├── environment.yml /  <- File specifying an environment
 |   requirements.txt   
 ├── README.md
-├── run.py/Makefile    <- Script for installing environments and
-|    /Snake file          reproducing  the full analysis.
+├── run.py/Makefile    <- Script for running the full
+|    /Snake file          analysis.
 │                        
 ├── data
 |   ├── interim        <- Intermediate data that has been transformed.
@@ -49,13 +56,13 @@ Som of these are optional
 │   └── raw            <- The original, immutable data dump.
 ├── notebooks          <- Jupyter notebooks.
 ├── output             <- For outputs of running the analysis.
-│   ├── visualizations <- visualizations generated during the analysis .               
-│   └── models         <- Saved models and predictions.
-│
+│   ├── models         <- Saved models and predictions.      
+│   └── visualizations <- Graphics created during analysis.       
+├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
 └── src                <- Source code for this project.
     └── __init__.py    <- Makes this a Python module.
 ```    
 
 ## License
 
-This project is licensed under the [MIT License](https://github.com/Jswig/cookiecutter-minimal-ml/blob/master/LICENSE).
+This project is distributed under the [MIT License](https://github.com/Jswig/cookiecutter-minimal-ml/blob/master/LICENSE).

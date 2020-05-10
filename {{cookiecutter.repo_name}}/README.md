@@ -27,16 +27,35 @@ pip install -r requirements.txt
 
 ```
 .
-├── environment.yml    <- File specifying a conda environment
+{% if cookiecutter.package_manager == "conda" %}
+├── environment.yml    <- The conda file for reproducing the analysis    
+|                         environment.
+{% elif cookiecutter.package_manager == }
+├── requirements.txt   <- The requirements file for reproducing the analysis 
+|                         environment.
+{% endif %}
+{% if cookiecutter.license != "No license file" %}
 ├── LICENSE
-├── README.md
-├── run.py             <- Script for installing environments and reproducing 
-│                         the full analysis
+{ %endif %}
+├── README.md          <- The top-level README
+{% if cookiecutter.workflow_automation == "Python" %}
+├── run.py             <- script that runs the full analysis
+{% elif cookiecutter.workflow_automation == "Snakemake" %}
+├── Snakefile          <- script with options for running the final analysis
+{% elif cookiecutter.workflow_automation == "Make" %}
+├── Makefile           <- script that runs the full analysis
+{% endif %}
 ├── data
+|   ├── interim        <- Intermediate data that has been transformed.
 │   ├── processed      <- The final, canonical data sets for modeling.
 │   └── raw            <- The original, immutable data dump.
 ├── notebooks          <- Jupyter notebooks
 ├── output             
+|   ├── models         <- Serialized models, predictions, model summaries.
+|   └── visualizations <- Graphics created during analysis.
+{% if cookiecutter.project_report == "Yes" %}
+├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
+{% endif }
 └── src                <- Source code for this project
     ├── __init__.py    <- Makes this a python module
 ```    
@@ -44,5 +63,5 @@ pip install -r requirements.txt
 {% if cookiecutter.license != "No license file" %}
 ## License
 
-Distributed under the  {{ cookiecutter.license }} license.
+This project is distributed under the  {{ cookiecutter.license }} license.
 {% endif %}
