@@ -2,14 +2,18 @@ name:
 	{{cookiecutter.repo_name}}
 channels:
 	- base
-	- anaconda
 	- conda-forge
+	- anaconda
 {% if cookiecutter.workflow_automation == "Snakemake" %}
 	- bioconda
 {% endif %}
 dependencies:
+{% if cookiecutter.notebooks == "Yes" %}
+	- jupyter
+{% endif %}
 {% if cookiecutter.workflow_automation == "Snakemake" %}
 	- snakemake
 {% endif %}
+
 	
 

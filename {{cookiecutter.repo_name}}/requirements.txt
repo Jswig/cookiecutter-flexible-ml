@@ -1,2 +1,6 @@
+{% if cookiecutter.notebooks == "Yes" %}
+jupyter
+{% endif %}
 {% if cookiecutter.workflow_automation == "Snakemake" %}
 snakemake
+{% endif %}
