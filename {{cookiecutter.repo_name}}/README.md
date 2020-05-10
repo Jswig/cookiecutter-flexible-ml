@@ -30,10 +30,10 @@ pip install -r requirements.txt
 {% if cookiecutter.package_manager == "conda" %}
 ├── environment.yml    <- The conda file for reproducing the analysis    
 |                         environment.
-{% elif cookiecutter.package_manager == "pip"%}
+{% elif cookiecutter.package_manager == "pip" %}
 ├── requirements.txt   <- The requirements file for reproducing the analysis 
 |                         environment.
-{% endif %}
+{% endif %} 
 {% if cookiecutter.license != "No license file" %}
 ├── LICENSE
 { %endif %}
