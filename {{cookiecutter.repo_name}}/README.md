@@ -55,7 +55,7 @@ pip install -r requirements.txt
 |   └── visualizations <- Graphics created during analysis.
 {% if cookiecutter.project_report == "Yes" %}
 ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-{% endif }
+{% endif %}
 └── src                <- Source code for this project
     ├── __init__.py    <- Makes this a python module
 ```    
