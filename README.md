@@ -11,7 +11,7 @@ A flexible cookiecutter template for reproducible data science.
 cookiecutters (project templates). See
 [cookiecutter.readthedocs.io](https://cookiecutter.readthedocs.io/en/1.7.0/index.html).
 
-## ⚙ Usage
+## Usage
 
 *Requirements*:
 - [cookiecutter](https://cookiecutter.readthedocs.io/en/1.7.0/min) >= 1.1
@@ -24,7 +24,7 @@ cookiecutter gh:Jswig/cookiecutter-flexible-ml
 `[Enter]` will select the default option in prompt.
 
 
-## 📁 Generated project structure
+## Generated project structure
 
 Some of these might not be created depending on options picked
 ```
@@ -49,7 +49,7 @@ Some of these might not be created depending on options picked
     └── __init__.py    <- Makes this a Python module.
 ```    
 
-## ✅ Motivation
+## Motivation
 
 A project template that promotes good practices for reproducible 
 data science (immutablity of raw data, seperation of exploratory code and 
