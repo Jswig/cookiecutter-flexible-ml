@@ -46,7 +46,14 @@ Some of these might not be created depending on options picked
 │   └── visualizations <- Graphics created during analysis.       
 ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
 └── src                <- Source code for this project.
-    └── __init__.py    <- Makes this a Python module.
+    ├── __init__.py    <- Makes this a Python module
+    ├── data                 <- Scripts to download or generate data.
+    |   └── make_dataset.py  
+    ├── features             <- Scripts to turn raw data into features for modeling.
+    |   └── build_features.py  
+    ├── models               <- Scripts used to generate models and inference results.
+    └── visualization        <- Scripts to generate graphics.
+        └── visualize.py
 ```    
 
 ## Motivation
