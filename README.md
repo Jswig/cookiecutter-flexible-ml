@@ -70,7 +70,7 @@ data science (immutablity of raw data, seperation of exploratory code and
  /classroom projects.
  
 This project is meant to adapt (and borrows liberally from) Driven Data's 
-[cookicutter-data-science](https://drivendata.github.io/cookiecutter-data-science#keep-secrets-and-configuration-out-of-version-control).
+[cookicutter-data-science](https://drivendata.github.io/cookiecutter-data-science#keep-secrets-and-configuration-out-of-version-control) 
 structure and philosophy to slightly different needs.
 
 
